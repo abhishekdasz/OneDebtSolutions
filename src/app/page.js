@@ -14,17 +14,16 @@ const page = () => {
     >
       <div className={homeStyles.homeContainer}>
 
-        <div className={homeStyles.homeLeft}>
-          <div className={homeStyles.description}>
-            <h1> OneDebt Solutions </h1>
-            <p> At One Debt Solutions, we offer comprehensive debt collection services, including early-stage collections, overdue account management, and legal recovery solutions. Our expertise spans various industries, allowing us to deliver customized strategies that maximize recovery rates for our clients. With a commitment to compliance and ethical practices, we handle each case with diligence and respect. </p>
-            <button> Explore </button>
-          </div>
+        <div className={homeStyles.contentBox}>
+          <span className={homeStyles.subTitle}> Trusted Company </span>
+          <h2> Expertise, Trust, & Your Financial Growth </h2>
+          <div className={homeStyles.buttonBox}> GET STARTED </div>
         </div>
 
-        <div className={homeStyles.homeRight}>
-          <img src="home.png" alt="home" />
+        <div className={homeStyles.shapeRotate}>
+          <img src="shape.png" alt="shape" />
         </div>
+
       </div>
     </div>
   )
