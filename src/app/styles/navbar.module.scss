@@ -1,0 +1,47 @@
+.navbarSection 
+{
+  .navbarContainer 
+  {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+
+
+    .logo 
+    {
+      img 
+      {
+        height: 38px;
+      }
+    }
+
+    .nav 
+    {
+      display: flex;
+      align-items: center;
+  
+      ul {
+        display: flex;
+        gap: 2.6rem;
+  
+        li {
+          font-family: cursive;
+          list-style: none;
+          font-size: 22px;
+          cursor: pointer;
+  
+          a {
+            text-decoration: none;
+            color: rgb(33, 33, 33);
+          }
+  
+          &:hover {
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+}
