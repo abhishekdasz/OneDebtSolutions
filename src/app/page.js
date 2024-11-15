@@ -3,12 +3,13 @@ import homeStyles from '@/app/page.module.scss'
 
 const page = () => {
   return (
+    <> 
     <div 
     className={homeStyles.homeSection} 
     style={{
       backgroundImage:"url('/bg.png')",
       backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
+      // backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
     }}    
     >
@@ -27,9 +28,38 @@ const page = () => {
       </div>
     </div>
 
-    // about section starts here
-    
-    // about section ends here
+
+
+
+
+
+
+
+    <div className={homeStyles.aboutSection}
+        style={{
+          backgroundImage:"url('/bg.png')",
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+        }} 
+    >
+      <div className={homeStyles.aboutContainer}>
+
+        <div className={homeStyles.leftAbout}>
+          <img src="about.png" alt="aboutImg" />
+        </div>
+
+        <div className={homeStyles.rightAbout}>
+          <div className={homeStyles.aboutContents}>
+            <span className={homeStyles.subTitle}> About Us </span>
+            <h2> Integrity, Transparency, and Investor Satisfaction </h2>
+            <p> At One Debt Solutions, we offer comprehensive debt collection services, including early-stage collections, overdue account management, and recovery solutions. Our expertise spans various industries, allowing us to deliver customized strategies that maximize recovery rates for our clients. With a commitment to compliance and ethical practices, we handle each case with diligence and respect. </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    </>
   )
 }
 
