@@ -49,3 +49,18 @@
     }
   }
 }
+
+
+@media screen and (max-width: 768px) 
+{
+  .navbarSection 
+  {
+    .navbarContainer 
+    {
+      .nav 
+      {
+        display: none;
+      }
+    }
+  }
+}

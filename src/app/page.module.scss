@@ -1,8 +1,10 @@
 .homeSection
 {
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+  padding: 140px 0;
   .homeContainer
   {
     font-family: 'Syne', sans-serif;
@@ -14,6 +16,7 @@
 
     .contentBox
     {
+      max-width: 1140px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -33,7 +36,6 @@
       {
         font-size: 72px;
         line-height: 86px;
-        width: 55%;
         text-align: center;
       }
       .buttonBox
@@ -48,21 +50,40 @@
     }
 
 
-    @keyframes rotate {
-      0% {
+    @keyframes rotate 
+    {
+      0% 
+      {
         transform: rotate(0deg);
       }
-      100% {
+      100% 
+      {
         transform: rotate(360deg);
       }
     }
     
-    .shapeRotate {
+    .shapeRotate 
+    {
       animation: rotate 24s linear infinite; /* 5s can be adjusted for speed */
       position: absolute;
       bottom: 65px;
       left: 451px;
     }
     
+  }
+}
+
+
+@media screen and (max-width: 768px) 
+{
+  .homeSection
+  {
+    .homeContainer
+    {
+      .shapeRotate
+      {
+        left: 10px;
+      }
+    }
   }
 }
