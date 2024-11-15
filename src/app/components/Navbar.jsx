@@ -6,13 +6,9 @@ import { CiLight } from "react-icons/ci";
 import Link from 'next/link';
 
 const NavBar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  }
   return (
     <div className={styles.navbarSection}>
-      <div className={`${styles.navbarContainer} ${isDarkMode ? styles.darkMode: ''}`}>
+      <div className={styles.navbarContainer}>
 
 
         <div className={styles.logo}>
@@ -31,14 +27,8 @@ const NavBar = () => {
         </div>
 
 
-        <div className={styles.darkMode}>
-          <button 
-            className={styles.darkModeButton} 
-            onClick={toggleDarkMode}
-            aria-label="Toggle dark mode"
-          >
-            {isDarkMode ? <CiLight /> : <MdDarkMode />}
-          </button>
+        <div className={styles.navBtn}>
+          <p> Get Started </p>
         </div>
       </div>
     </div>

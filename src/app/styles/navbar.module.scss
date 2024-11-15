@@ -1,11 +1,15 @@
 .navbarSection 
 {
+  position: sticky;
+  top: 0; /* Ensures the navbar stays at the top */
+  z-index: 1000; /* Ensures it stays on top of other content */
   .navbarContainer 
   {
     display: flex;
     justify-content: space-between;
     padding: 1rem 100px;
-    position: absolute;
+    position: sticky;
+    background-color: #181818;
     width: 100%;
 
 
@@ -35,7 +39,6 @@
           a {
             text-decoration: none;
             color: #fff;
-            text-transform: capitalize;
           }
   
           a:hover {
