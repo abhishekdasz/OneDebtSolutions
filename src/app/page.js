@@ -134,7 +134,8 @@ const page = () => {
     >
         <div className={homeStyles.footerContainer}>
           <div className={homeStyles.leftFooter}>
-            <h4> Understanding Risk Management in High-Yield Investment Programs Investments: Tips for Success </h4>
+            <h4> Navigating Risk Management in Financial Solutions Effectively: Expert Tips for Success </h4>
+            {/* <h4> Understanding Risk Management in High-Yield Investment Programs Investments: Tips for Success </h4> */}
             <h2> Let's Chat <CgArrowTopRight /> </h2> 
             <div className={homeStyles.footerShape}> <img src="shape8.png" alt="shape8" /> </div>
             <div className={homeStyles.footerBg}> <img src="shape9.png" alt="shape9" /> </div>
@@ -152,7 +153,8 @@ const page = () => {
           <div className={homeStyles.rightFooter}> 
             <h4> onedebtbbsr@gmail.com </h4>
             <div>
-              <h6> Samantarapur, Old Town, Bhubaneswar </h6>
+              <h6> Plot No-940, Old Town </h6>
+              <h6> Lewis Road, Bhubaneswar </h6>
               <h6> Odisha, 751002 </h6>
             </div>
           </div>
