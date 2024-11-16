@@ -19,11 +19,13 @@ const page = () => {
     >
       <div className={homeStyles.homeContainer}>
 
-        {/* <div className={homeStyles.bgg}> <img src="rectangleBg.png" alt="bg" /> </div> */}
+        {/* <div className={homeStyles.bgOne}> <img src="shape2.png" alt="bg" /> </div> */}
+        <div className={homeStyles.bgTwo}> <img src="shape9.png" alt="bg" /> </div>
+
         <div className={homeStyles.contentBox}>
           <span className={homeStyles.subTitle}> Trusted Company </span>
           <h2> Expertise, Trust, & Your Financial Growth </h2>
-          <div className={homeStyles.buttonBox}> GET STARTED <CgArrowTopRight color='red' /> </div>
+          <div className={homeStyles.buttonBox}> GET STARTED </div>
         </div>
 
         <div className={homeStyles.shapeRotate}>
@@ -113,6 +115,8 @@ const page = () => {
           <div className={homeStyles.patternLayer}>
             <img src="shape6.png" alt="shape6" />
             <img src="shape7.png" alt="shape7" />
+            <img src="shape8.png" alt="shape8" />
+            <img src="shape9.png" alt="shape2" />
           </div>
         </div>
       </div>
@@ -132,6 +136,8 @@ const page = () => {
           <div className={homeStyles.leftFooter}>
             <h4> Understanding Risk Management in High-Yield Investment Programs Investments: Tips for Success </h4>
             <h2> Let's Chat <CgArrowTopRight /> </h2> 
+            <div className={homeStyles.footerShape}> <img src="shape8.png" alt="shape8" /> </div>
+            <div className={homeStyles.footerBg}> <img src="shape9.png" alt="shape9" /> </div>
             <p> OneDebt © 2024, All Rights Reserved </p>
           </div>
 
