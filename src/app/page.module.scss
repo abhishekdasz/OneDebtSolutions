@@ -434,6 +434,7 @@
     p 
     {
       margin-top: 3rem;
+      color: rgba(255, 255, 255, 0.7);
     }
   }
   .midFooter
@@ -465,12 +466,17 @@
 
     h4 
     {
-      font-size: 18px;
+      font-size: 25px;
     }
     h4:hover 
     {
       color: #deff10;
       cursor: pointer;
+    }
+    h6 
+    {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.7);
     }
   }
 }
