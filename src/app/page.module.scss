@@ -447,6 +447,7 @@
 {
   padding: 7rem 0;
   font-family: 'Syne', sans-serif;
+  overflow: hidden;
   .footerContainer
   {
     display: flex;
@@ -460,6 +461,10 @@
     gap: 3rem;
     position: relative;
 
+    h4, h2, p 
+    {
+      z-index: 3;
+    }
     h4 
     {
       width: 420px;
@@ -475,7 +480,7 @@
       color: #deff10;
       cursor: pointer;
     }
-    .footerBg
+    .footerShape
     {
       position: absolute;
       right: -3rem;
@@ -485,6 +490,13 @@
       {
         height: 13rem;
       }
+    }
+    .footerBg
+    {
+      position: absolute;
+      left: -14rem;
+      top: -10rem;
+      z-index: 1;
     }
     p 
     {
@@ -497,6 +509,7 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    z-index: 3;
     li 
     {
       list-style: none;
