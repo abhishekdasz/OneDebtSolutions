@@ -5,3 +5,27 @@
   margin: 0;
   color: #fff;
 }
+/* For Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background: #2a2a2a; /* Dark background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555; /* Darker color for the scrollbar handle */
+  border-radius: 6px; /* Rounded corners for the scrollbar */
+  border: 2px solid #2a2a2a; /* Matches track color for a smoother look */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777; /* Lighter shade when hovered */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #555 #2a2a2a; /* Thumb color and track color */
+}

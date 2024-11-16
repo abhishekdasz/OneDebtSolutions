@@ -28,7 +28,7 @@ const NavBar = () => {
 
 
         <div className={styles.navBtn}>
-          <p> Get Started </p>
+          <p> GET STARTED </p>
         </div>
       </div>
     </div>
