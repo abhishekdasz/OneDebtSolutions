@@ -267,6 +267,9 @@
 .joinUsSection
 {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .joinUsContainer
   {
     display: flex;
@@ -537,8 +540,10 @@
   // homeSection for mobile
   .homeSection 
   {
+    height: auto;
     padding: 30px 20px; 
     overflow: hidden;
+    align-items: flex-start;
     .homeContainer 
     {
       flex-direction: column; 
@@ -548,13 +553,14 @@
       {
         left: 0;
       }
-
-      h2 
+      .contentBox
       {
-        font-size: 48px; 
-        line-height: 56px;
+        h2 
+        {
+          font-size: 48px; 
+          line-height: 56px;
+        }
       }
-
       .buttonBox 
       {
         padding: 12px 24px; 
@@ -591,13 +597,24 @@
         }
       }
       .leftAbout,
-      .rightAbout {
+      .rightAbout 
+      {
         width: 100%; 
       }
 
-      h2 {
-        font-size: 32px; 
-        line-height: 40px;
+      .rightAbout 
+      {
+        .aboutContents
+        {
+          .subTitle
+          {
+            h2 
+            {
+              font-size: 32px; 
+              line-height: 40px;
+            }
+          }
+        }
       }
     }
   }
@@ -629,8 +646,7 @@
         }
         .patternLayer img:nth-child(2)
         {
-          right: 5rem;
-          top: -3rem;
+          display: none;
         }
         .patternLayer img:nth-child(3)
         {

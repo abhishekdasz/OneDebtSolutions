@@ -115,11 +115,25 @@ const page = () => {
             <img src="shape9.png" alt="shape2" />
           </div>
         </div>
+        <div className={homeStyles.figures}>
+          <div className='figures-container'>
+            <div className='figure1'>
+              <div className='figure'>
+                <span> 100 </span>
+                <span> % </span>
+              </div>
+              <div> Customer Satisfaction </div>
+            </div>
+            <div className='figure1'>  </div>
+            <div className='figure1'>  </div>
+          </div>
+        </div>
       </div>
     </div>
     {/* joinUsPage ends here */}    
 
 
+    {/* FooterPage starts here */}
     <div className={homeStyles.footerSection}
     style={{
       backgroundImage:"url('/bg.png')",
@@ -156,6 +170,7 @@ const page = () => {
           </div>
         </div>
     </div>
+    {/* FooterPage ends here */}
     </>
   )
 }
