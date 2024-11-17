@@ -1,3 +1,4 @@
+// home-section starts here
 .homeSection
 {
   // height: 100vh;
@@ -93,42 +94,9 @@
     
   }
 }
+// home-section ends here
 
-
-@media screen and (max-width: 768px) 
-{
-  .homeSection
-  {
-    .homeContainer
-    {
-      .contentBox
-      {
-        .subTitle
-        {
-          font-size: 20px;
-        }
-        h2
-        {
-          font-size: 2rem;
-          line-height: 3rem;
-        }
-      }
-      .shapeRotate
-      {
-        left: 10px;
-      }
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
+// about-section starts here
 .aboutSection
 {
   font-family: 'Syne', sans-serif;
@@ -292,47 +260,9 @@
     }
   }
 }
+// about-section ends here
 
-
-@media screen and (max-width: 768px) 
-{
-  .aboutSection
-  {
-    .aboutContainer
-    {
-      flex-direction: column;
-
-      .leftAbout
-      {
-        .floatImg img
-        {
-          height: 350px;
-        }
-      }
-      .blurBg img
-      {
-        height: 350px;
-      }
-    } 
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// joinUs-section starts here
 .joinUsSection
 {
   .joinUsContainer
@@ -460,14 +390,9 @@
     }
   }
 }
+// joinUs-section ends here
 
-
-
-
-
-
-
-
+// footer-section starts here
 .footerSection
 {
   padding: 7rem 0;
@@ -570,7 +495,7 @@
     {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.5 rem;
       h6 
       {
         font-size: 18px;
@@ -580,3 +505,142 @@
 
   }
 }
+// footer-section ends here
+
+
+
+// Global media query for small screens (e.g., mobile)
+@media only screen and (max-width: 768px) {
+  
+  // Adjust .homeSection for mobile
+  .homeSection {
+    padding: 80px 20px; // Reduce padding for smaller screens
+    .homeContainer {
+      flex-direction: column; // Stack content vertically
+      align-items: center;
+
+      h2 {
+        font-size: 48px; // Smaller font size
+        line-height: 56px;
+      }
+
+      .buttonBox {
+        padding: 12px 24px; // Adjust padding for button
+        font-size: 1rem;
+      }
+    }
+  }
+
+  // Adjust .aboutSection for mobile
+  .aboutSection {
+    .aboutContainer {
+      flex-direction: column; // Stack content vertically
+      .leftAbout,
+      .rightAbout {
+        width: 100%; // Full width for better use of space
+      }
+
+      h2 {
+        font-size: 32px; // Reduce font size
+        line-height: 40px;
+      }
+    }
+  }
+
+  // Adjust .joinUsSection for mobile
+  .joinUsSection {
+    .joinUsContainer {
+      padding: 5rem 1rem; // Reduce padding
+      .hiringBanner {
+        h2 {
+          font-size: 2.5rem; // Smaller font size
+          line-height: 48px;
+        }
+      }
+      .joinBtn {
+        padding: 10px 20px; // Adjust button padding
+        font-size: 1rem;
+      }
+    }
+  }
+
+  // Adjust .footerSection for mobile
+  .footerSection {
+    padding: 3rem 1rem; // Reduce padding
+    .footerContainer {
+      flex-direction: column; // Stack content vertically
+      align-items: center;
+
+      .leftFooter,
+      .midFooter,
+      .rightFooter {
+        width: 100%; // Full width for all sections
+        text-align: center; // Center align text
+        gap: 1.5rem; // Reduce gap
+      }
+
+      h2 {
+        font-size: 48px; // Adjust header font size
+      }
+
+      li a {
+        font-size: 20px; // Adjust link font size
+      }
+
+      .footerBg,
+      .footerShape {
+        display: none; // Hide large background shapes for simplicity
+      }
+    }
+  }
+}
+
+
+// @media screen and (max-width: 768px) 
+// {
+//   .homeSection
+//   {
+//     .homeContainer
+//     {
+//       .contentBox
+//       {
+//         .subTitle
+//         {
+//           font-size: 20px;
+//         }
+//         h2
+//         {
+//           font-size: 2rem;
+//           line-height: 3rem;
+//         }
+//       }
+//       .shapeRotate
+//       {
+//         left: 10px;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 768px) 
+// {
+//   .aboutSection
+//   {
+//     .aboutContainer
+//     {
+//       flex-direction: column;
+
+//       .leftAbout
+//       {
+//         .floatImg img
+//         {
+//           height: 350px;
+//         }
+//       }
+//       .blurBg img
+//       {
+//         height: 350px;
+//       }
+//     } 
+//   }
+// }
