@@ -1,7 +1,7 @@
 // home-section starts here
 .homeSection
 {
-  height: 100vh;
+  height: 86vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -99,7 +99,7 @@
 // about-section starts here
 .aboutSection
 {
-  height: 100vh;
+  height: 86vh;
   font-family: 'Syne', sans-serif;
   .aboutContainer
   {
@@ -266,17 +266,19 @@
 // joinUs-section starts here
 .joinUsSection
 {
-  height: 100vh;
+  height: 86vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   .joinUsContainer
   {
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-family: 'Syne', sans-serif;
 
     .contentsJoinUs
@@ -286,7 +288,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 10rem 0;
       gap: 3rem;
       .hiringBanner
       {
@@ -338,8 +339,8 @@
       .patternLayer img:nth-child(1)
       {
         position: absolute;
-        left: -200px;
-        top: 200px;
+        left: -15rem;
+        top: 10rem;
         animation: rotate 24s linear infinite; 
       }
 
@@ -358,8 +359,8 @@
       {
         animation: floatBg 3s infinite alternate;
         position: absolute;
-        right: -6rem;
-        top: 4rem;
+        right: -15rem;
+        top: -5rem;
       }
       @keyframes zoom-fade 
       {
@@ -395,24 +396,34 @@
     }
     .figures
     {
+      width: 140%;
       .figuresContainer
       {
         display: flex;
-        gap: 2rem;
+        justify-content: space-between;
         .figure
         {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          text-align: center;
           div 
           {
             span 
             {
-              font-size: 1.5rem;
+              font-size: 2.5rem;
               line-height: 2rem;
               font-weight: 700;
             }
-            p
+            span:nth-child(2)
             {
-              font-size: 1rem;       
+              color: #deff10;
             }
+          }
+          p
+          {
+            font-size: 1.2rem;    
+            color: rgba(255, 255, 255, 0.7); 
           }
         }
       }
@@ -424,7 +435,7 @@
 // footer-section starts here
 .footerSection
 {
-  height: 100vh;
+  height: 86vh;
   display: flex;
   align-items: center;
   font-family: 'Syne', sans-serif;
@@ -595,6 +606,7 @@
 
   // aboutSection for mobile
   .aboutSection {
+    height: auto;
     padding: 1rem;
     .aboutContainer {
       flex-direction: column;
@@ -645,6 +657,7 @@
 
   // Adjust joinUsSection for mobile
   .joinUsSection {
+    height: auto;
     .joinUsContainer {
       padding: 5rem 1rem; 
 
@@ -665,8 +678,9 @@
         }
         .patternLayer img:nth-child(1)
         {
-          left: 5rem;
-          top: 25rem;
+          left: 7rem;
+          top: 30rem;
+          height: 10rem;
         }
         .patternLayer img:nth-child(2)
         {
@@ -683,15 +697,21 @@
           top: 0;
         }
       }
+      .figures
+      {
+        width: 100%;
+      }
     }
   }
 
   // Adjust .footerSection for mobile
   .footerSection {
     padding: 3rem 1rem; 
-    .footerContainer {
+    .footerContainer 
+    {
       flex-direction: column; 
       align-items: center;
+      gap: 1.2rem;
 
       .leftFooter
       {

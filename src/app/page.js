@@ -103,7 +103,7 @@ const page = () => {
       <div className={homeStyles.joinUsContainer}>
         <div className={homeStyles.contentsJoinUs}>
           <div className={homeStyles.hiringBanner}>
-            <h2> We're Hiring! </h2>
+            <h2> We&apos;re Hiring! </h2>
             <h2> Join Our Team Today. </h2>
           </div>
           <div className={homeStyles.joinBtn}> Join Now </div>
@@ -112,31 +112,31 @@ const page = () => {
             <img src="shape6.png" alt="shape6" />
             <img src="shape7.png" alt="shape7" />
             <img src="shape8.png" alt="shape8" />
-            <img src="shape9.png" alt="shape2" />
+            {/* <img src="shape9.png" alt="shape2" /> */}
           </div>
         </div>
         <div className={homeStyles.figures}>
           <div className={homeStyles.figuresContainer}>
             <div className={homeStyles.figure}>
               <div>
-                <span> 100 </span>
-                <span> % </span>
+                <span>100</span>
+                <span>%</span>
               </div>
               <p> Customer Satisfaction </p>
             </div>
             <div className={homeStyles.figure}>
               <div>
-                <span> 100 </span>
-                <span> % </span>
+                <span>5</span>
+                <span>+</span>
               </div>
-              <div> Customer Satisfaction </div>
+              <p> Community Partners </p>
             </div>
             <div className={homeStyles.figure}>
               <div>
-                <span> 100 </span>
-                <span> % </span>
+                <span>80</span>
+                <span>%</span>
               </div>
-              <div> Customer Satisfaction </div>
+              <p> Successful Settlements </p>
             </div>
 
 
@@ -160,7 +160,7 @@ const page = () => {
           <div className={homeStyles.leftFooter}>
             <h4> Navigating Risk Management in Financial Solutions Effectively: Expert Tips for Success </h4>
             {/* <h4> Understanding Risk Management in High-Yield Investment Programs Investments: Tips for Success </h4> */}
-            <h2> Let's Chat <CgArrowTopRight /> </h2> 
+            <h2> Let&apos;s Chat <CgArrowTopRight /> </h2> 
             <div className={homeStyles.footerShape}> <img src="shape8.png" alt="shape8" /> </div>
             <div className={homeStyles.footerBg}> <img src="shape9.png" alt="shape9" /> </div>
             <p> OneDebt © 2024, All Rights Reserved </p>
