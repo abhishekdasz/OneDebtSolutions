@@ -116,16 +116,30 @@ const page = () => {
           </div>
         </div>
         <div className={homeStyles.figures}>
-          <div className='figures-container'>
-            <div className='figure1'>
-              <div className='figure'>
+          <div className={homeStyles.figuresContainer}>
+            <div className={homeStyles.figure}>
+              <div>
+                <span> 100 </span>
+                <span> % </span>
+              </div>
+              <p> Customer Satisfaction </p>
+            </div>
+            <div className={homeStyles.figure}>
+              <div>
                 <span> 100 </span>
                 <span> % </span>
               </div>
               <div> Customer Satisfaction </div>
             </div>
-            <div className='figure1'>  </div>
-            <div className='figure1'>  </div>
+            <div className={homeStyles.figure}>
+              <div>
+                <span> 100 </span>
+                <span> % </span>
+              </div>
+              <div> Customer Satisfaction </div>
+            </div>
+
+
           </div>
         </div>
       </div>
