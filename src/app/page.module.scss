@@ -510,15 +510,16 @@
 
 
 // Global media query for small screens (mobile)
-@media only screen and (max-width: 768px) {
-  
+@media only screen and (max-width: 768px) 
+{
   // homeSection for mobile
   .homeSection 
   {
-    padding: 80px 20px; // Reduce padding for smaller screens
+    padding: 30px 20px; 
+    overflow: hidden;
     .homeContainer 
     {
-      flex-direction: column; // Stack content vertically
+      flex-direction: column; 
       align-items: center;
 
       .shapeRotate
@@ -528,13 +529,13 @@
 
       h2 
       {
-        font-size: 48px; // Smaller font size
+        font-size: 48px; 
         line-height: 56px;
       }
 
       .buttonBox 
       {
-        padding: 12px 24px; // Adjust padding for button
+        padding: 12px 24px; 
         font-size: 1rem;
       }
     }
@@ -542,6 +543,7 @@
 
   // aboutSection for mobile
   .aboutSection {
+    padding: 1rem;
     .aboutContainer {
       flex-direction: column;
       .leftAbout
@@ -568,29 +570,56 @@
       }
       .leftAbout,
       .rightAbout {
-        width: 100%; // Full width for better use of space
+        width: 100%; 
       }
 
       h2 {
-        font-size: 32px; // Reduce font size
+        font-size: 32px; 
         line-height: 40px;
       }
     }
   }
 
-  // Adjust .joinUsSection for mobile
+  // Adjust joinUsSection for mobile
   .joinUsSection {
     .joinUsContainer {
-      padding: 5rem 1rem; // Reduce padding
-      .hiringBanner {
-        h2 {
-          font-size: 2.5rem; // Smaller font size
-          line-height: 48px;
+      padding: 5rem 1rem; 
+
+      .contentsJoinUs
+      {
+        .hiringBanner 
+        {
+          h2 
+          {
+            font-size: 2.5rem;
+            line-height: 48px;
+          }
         }
-      }
-      .joinBtn {
-        padding: 10px 20px; // Adjust button padding
-        font-size: 1rem;
+        .joinBtn 
+        {
+          padding: 10px 20px; // Adjust button padding
+          font-size: 1rem;
+        }
+        .patternLayer img:nth-child(1)
+        {
+          left: 5rem;
+          top: 25rem;
+        }
+        .patternLayer img:nth-child(2)
+        {
+          right: 5rem;
+          top: -3rem;
+        }
+        .patternLayer img:nth-child(3)
+        {
+          left: 0;
+        }
+        .patternLayer img:nth-child(4)
+        {
+          width: 100%;
+          left: 0;
+          top: 0;
+        }
       }
     }
   }
@@ -602,6 +631,10 @@
       flex-direction: column; // Stack content vertically
       align-items: center;
 
+      .leftFooter
+      {
+        width: auto;
+      }
       .leftFooter,
       .midFooter,
       .rightFooter {

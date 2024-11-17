@@ -80,7 +80,12 @@
   {
     .navbarContainer 
     {
+      padding: 1rem;
       .nav 
+      {
+        display: none;
+      }
+      .navBtn
       {
         display: none;
       }
