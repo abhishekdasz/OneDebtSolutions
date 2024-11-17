@@ -555,7 +555,15 @@
         }
         .rotateShape
         {
-          right: 10px;
+          display: none;
+        }
+      }
+      .blurBg
+      {
+        left: 0;
+        img
+        {
+          height: 300px;
         }
       }
       .leftAbout,
