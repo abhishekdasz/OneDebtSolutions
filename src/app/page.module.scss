@@ -626,9 +626,9 @@
 
   // Adjust .footerSection for mobile
   .footerSection {
-    padding: 3rem 1rem; // Reduce padding
+    padding: 3rem 1rem; 
     .footerContainer {
-      flex-direction: column; // Stack content vertically
+      flex-direction: column; 
       align-items: center;
 
       .leftFooter
@@ -638,22 +638,22 @@
       .leftFooter,
       .midFooter,
       .rightFooter {
-        width: 100%; // Full width for all sections
-        text-align: center; // Center align text
-        gap: 1.5rem; // Reduce gap
+        width: 100%; 
+        text-align: center; 
+        gap: 1.5rem; 
       }
 
       h2 {
-        font-size: 48px; // Adjust header font size
+        font-size: 48px; 
       }
 
       li a {
-        font-size: 20px; // Adjust link font size
+        font-size: 20px; 
       }
 
       .footerBg,
       .footerShape {
-        display: none; // Hide large background shapes for simplicity
+        display: none; 
       }
     }
   }
