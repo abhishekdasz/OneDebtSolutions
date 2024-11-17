@@ -509,32 +509,55 @@
 
 
 
-// Global media query for small screens (e.g., mobile)
+// Global media query for small screens (mobile)
 @media only screen and (max-width: 768px) {
   
-  // Adjust .homeSection for mobile
-  .homeSection {
+  // homeSection for mobile
+  .homeSection 
+  {
     padding: 80px 20px; // Reduce padding for smaller screens
-    .homeContainer {
+    .homeContainer 
+    {
       flex-direction: column; // Stack content vertically
       align-items: center;
 
-      h2 {
+      .shapeRotate
+      {
+        left: 0;
+      }
+
+      h2 
+      {
         font-size: 48px; // Smaller font size
         line-height: 56px;
       }
 
-      .buttonBox {
+      .buttonBox 
+      {
         padding: 12px 24px; // Adjust padding for button
         font-size: 1rem;
       }
     }
   }
 
-  // Adjust .aboutSection for mobile
+  // aboutSection for mobile
   .aboutSection {
     .aboutContainer {
-      flex-direction: column; // Stack content vertically
+      flex-direction: column;
+      .leftAbout
+      {
+        .floatImg
+        {
+          img 
+          {
+            height: 300px;
+          }
+        }
+        .rotateShape
+        {
+          right: 10px;
+        }
+      }
       .leftAbout,
       .rightAbout {
         width: 100%; // Full width for better use of space
@@ -596,51 +619,3 @@
 }
 
 
-// @media screen and (max-width: 768px) 
-// {
-//   .homeSection
-//   {
-//     .homeContainer
-//     {
-//       .contentBox
-//       {
-//         .subTitle
-//         {
-//           font-size: 20px;
-//         }
-//         h2
-//         {
-//           font-size: 2rem;
-//           line-height: 3rem;
-//         }
-//       }
-//       .shapeRotate
-//       {
-//         left: 10px;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 768px) 
-// {
-//   .aboutSection
-//   {
-//     .aboutContainer
-//     {
-//       flex-direction: column;
-
-//       .leftAbout
-//       {
-//         .floatImg img
-//         {
-//           height: 350px;
-//         }
-//       }
-//       .blurBg img
-//       {
-//         height: 350px;
-//       }
-//     } 
-//   }
-// }

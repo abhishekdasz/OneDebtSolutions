@@ -52,9 +52,6 @@ const page = () => {
         }} 
     >
       <div className={homeStyles.aboutContainer}>
-
-
-
         <div className={homeStyles.leftAbout}>
           <div className={homeStyles.floatImg}>
             <img src="about.png" alt="aboutImg" />
