@@ -10,7 +10,6 @@ const page = () => {
     <div 
     className={homeStyles.homeSection} 
     style={{
-      // background:'black',
       backgroundImage:"url('/bg.png')",
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',

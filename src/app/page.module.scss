@@ -1,7 +1,7 @@
 // home-section starts here
 .homeSection
 {
-  // height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -99,6 +99,7 @@
 // about-section starts here
 .aboutSection
 {
+  height: 100vh;
   font-family: 'Syne', sans-serif;
   .aboutContainer
   {
@@ -265,6 +266,7 @@
 // joinUs-section starts here
 .joinUsSection
 {
+  height: 100vh;
   .joinUsContainer
   {
     display: flex;
@@ -395,7 +397,9 @@
 // footer-section starts here
 .footerSection
 {
-  padding: 7rem 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   font-family: 'Syne', sans-serif;
   overflow: hidden;
   .footerContainer
@@ -507,8 +511,26 @@
 }
 // footer-section ends here
 
-
-
+// Global media query for small screens (tablets)
+@media only screen and (min-width: 768px) and (max-width: 1024px) 
+{
+  .homeSection
+  {
+    overflow: hidden;
+  }
+  .aboutSection
+  {
+    overflow: hidden;
+  }
+  .joinUsSection
+  {
+    overflow: hidden;
+  }
+  .footerSection
+  {
+    overflow: hidden;
+  }
+}
 // Global media query for small screens (mobile)
 @media only screen and (max-width: 768px) 
 {
@@ -633,7 +655,10 @@
 
       .leftFooter
       {
-        width: auto;
+        h4 
+        {
+          width: auto;
+        }
       }
       .leftFooter,
       .midFooter,
@@ -658,5 +683,6 @@
     }
   }
 }
+
 
 
