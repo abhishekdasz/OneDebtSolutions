@@ -1,0 +1,116 @@
+// footer-section starts here
+.footerSection
+{
+  height: 85.8vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Syne', sans-serif;
+  overflow: hidden;
+  .footerContainer
+  {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .leftFooter
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+
+    h4, h2, p 
+    {
+      z-index: 3;
+    }
+    h4 
+    {
+      width: 420px;
+      font-size: 24px;
+      line-height: 40px;
+    }
+    h2 
+    {
+      font-size: 64px;
+    }
+    h2:hover 
+    {
+      color: #deff10;
+      cursor: pointer;
+    }
+    .footerShape
+    {
+      position: absolute;
+      right: -3rem;
+      bottom: 2rem;
+      animation: zoom-fade 4s infinite linear;
+      img 
+      {
+        height: 13rem;
+      }
+    }
+    .footerBg
+    {
+      position: absolute;
+      left: -14rem;
+      top: -10rem;
+      z-index: 1;
+    }
+    p 
+    {
+      margin-top: 3rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  .midFooter
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 3;
+    li 
+    {
+      list-style: none;
+      a 
+      {
+        text-decoration: none;
+        font-size: 25px;
+        line-height: 22px;
+      }
+      a:hover 
+      {
+        cursor: pointer;
+        color: #deff10;
+      }
+    }
+  }
+  .rightFooter
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    h4 
+    {
+      font-size: 25px;
+    }
+    h4:hover 
+    {
+      color: #deff10;
+      cursor: pointer;
+    }
+    div 
+    {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5 rem;
+      h6 
+      {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+
+  }
+}
+// footer-section ends here
