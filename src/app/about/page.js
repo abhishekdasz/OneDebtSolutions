@@ -9,6 +9,7 @@ const page = () => {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
+          overflow:'hidden'
         }} 
     >
       <div className={homeStyles.aboutContainer}>

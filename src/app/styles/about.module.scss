@@ -3,6 +3,8 @@
 {
   height: 86vh;
   font-family: 'Syne', sans-serif;
+  position: relative;
+  overflow: hidden;
   .aboutContainer
   {
     display: flex;
