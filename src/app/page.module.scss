@@ -642,13 +642,10 @@
       {
         .aboutContents
         {
-          .subTitle
+          h2 
           {
-            h2 
-            {
-              font-size: 32px; 
-              line-height: 40px;
-            }
+            font-size: 2.5rem; 
+            line-height: 40px;
           }
         }
       }
@@ -718,26 +715,39 @@
         h4 
         {
           width: auto;
+          font-size: 1.2rem;
+          line-height: 2rem;
         }
       }
       .leftFooter,
       .midFooter,
-      .rightFooter {
+      .rightFooter 
+      {
         width: 100%; 
         text-align: center; 
         gap: 1.5rem; 
       }
 
-      h2 {
-        font-size: 48px; 
+      .rightFooter
+      {
+        h4 
+        {
+          font-size: 1.4rem;
+        }
+      }
+      h2 
+      {
+        font-size: 2.8rem; 
       }
 
-      li a {
+      li a 
+      {
         font-size: 20px; 
       }
 
       .footerBg,
-      .footerShape {
+      .footerShape 
+      {
         display: none; 
       }
     }

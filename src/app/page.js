@@ -3,6 +3,7 @@ import homeStyles from '@/app/page.module.scss'
 import Link from 'next/link';
 import { CgArrowTopRight } from "react-icons/cg";
 
+
 const page = () => {
   return (
     <> 
