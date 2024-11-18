@@ -1,4 +1,5 @@
 import React from 'react'
+import homeStyles from '@/app/styles/career.module.scss'
 
 const page = () => {
   return (
