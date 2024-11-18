@@ -1,0 +1,166 @@
+// about-section starts here
+.aboutSection
+{
+  height: 86vh;
+  font-family: 'Syne', sans-serif;
+  .aboutContainer
+  {
+    display: flex;
+    
+    .leftAbout
+    {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .floatImg 
+      {
+        animation: floatBg 3s infinite alternate;
+        z-index: 2;
+        img 
+        {
+          height: 440px;
+        }
+      }
+      @keyframes rotate 
+      {
+        0% 
+        {
+          transform: rotate(0deg);
+        }
+        100% 
+        {
+          transform: rotate(360deg);
+        }
+      }
+      .rotateShape
+      {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        animation: rotate 24s linear infinite;
+      }
+
+
+
+
+      @keyframes float 
+      {
+        0% 
+        {
+          transform: translateX(-50px);
+        }
+        50% 
+        {
+          transform: translateX(-5px);
+        }
+        100% 
+        {
+          transform: translateX(-50px);
+        }
+      }
+      .shapeFive 
+      {
+        animation: float 10s linear infinite;
+        // animation-name: float;
+        // animation-duration: 15s;
+        // animation-iteration-count: infinite;
+        // animation-timing-function: linear;
+        position: absolute;
+        right: 105px;
+        top: 10px;
+      }
+    }
+
+    @keyframes floatBg {
+      0% {
+        transform: translateY(-20px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(-20px);
+      }
+    }
+    
+    
+
+
+    .blurBg
+    {
+      position: absolute;
+      left: 210px;
+      img 
+      {
+        height: 600px;
+      }
+    }
+
+
+
+    // zoom-fade animation
+    @keyframes zoom-fade 
+    {
+      0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    }
+    .zoomFade
+    {
+      animation: zoom-fade 4s infinite linear;
+      position: absolute;
+    }
+
+
+
+    .rightAbout
+    {
+      flex: 1;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .aboutContents
+      {
+        max-width: 460px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .subTitle
+        {
+          width: 126px;
+          color: #deff10;
+          font-size: 22px;
+          padding: 7.5px 15px;
+          font-weight: 500;
+          background-color: #deff101f;
+          border-radius: 6px;
+        }
+        h2 
+        {
+          font-size: 48px;
+          line-height: 48px;
+        }
+        p
+        {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+// about-section ends here
