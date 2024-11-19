@@ -22,6 +22,29 @@
       }
     }
 
+    .hamburger
+    {
+      cursor: pointer;
+      display: none;
+    }
+
+    .nav.active {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+
+      ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
     .nav 
     {
       display: flex;
@@ -91,6 +114,10 @@
     .navbarContainer 
     {
       padding: 1rem;
+      .hamburger
+      {
+        display: block;
+      }
       .nav 
       {
         display: none;

@@ -19,7 +19,7 @@ const NavBar = () => {
           <Link href='/'> <img src="logo.png" alt="logo" /> </Link>
         </div>
 
-        <div className={styles.hamburger}>
+        <div className={styles.hamburger} onClick={toggleMenu}>
           { menuOpen ? <MdClose size={28}/> : <MdMenu size={28}/> } 
         </div>
         
