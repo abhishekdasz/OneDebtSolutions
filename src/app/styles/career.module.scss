@@ -166,3 +166,56 @@
   }
 }
 // joinUs-section ends here
+
+@media only screen and (max-width: 768px) 
+{
+  // Adjust joinUsSection for mobile
+  .joinUsSection {
+    // height: 89vh;
+    .joinUsContainer {
+      padding: 5rem 1rem; 
+
+      .contentsJoinUs
+      {
+        .hiringBanner 
+        {
+          h2 
+          {
+            font-size: 2.5rem;
+            line-height: 48px;
+          }
+        }
+        .joinBtn 
+        {
+          padding: 10px 20px; // Adjust button padding
+          font-size: 1rem;
+        }
+        .patternLayer img:nth-child(1)
+        {
+          display: none;
+          left: 7rem;
+          top: 30rem;
+          height: 10rem;
+        }
+        .patternLayer img:nth-child(2)
+        {
+          display: none;
+        }
+        .patternLayer img:nth-child(3)
+        {
+          left: 0;
+        }
+        .patternLayer img:nth-child(4)
+        {
+          width: 100%;
+          left: 0;
+          top: 0;
+        }
+      }
+      .figures
+      {
+        width: 100%;
+      }
+    }
+  }
+}

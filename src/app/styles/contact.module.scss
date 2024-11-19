@@ -114,3 +114,58 @@
   }
 }
 // footer-section ends here
+
+@media only screen and (max-width: 768px) 
+{
+  // .footerSection for mobile
+  .footerSection {
+    padding: 3rem 1rem; 
+    .footerContainer 
+    {
+      flex-direction: column; 
+      align-items: center;
+      gap: 1.2rem;
+ 
+      .leftFooter
+      {
+        h4 
+        {
+          width: auto;
+          font-size: 1.2rem;
+          line-height: 2rem;
+        }
+      }
+      .leftFooter,
+      .midFooter,
+      .rightFooter 
+      {
+        width: 100%; 
+        text-align: center; 
+        gap: 1.5rem; 
+      }
+
+      .rightFooter
+      {
+        h4 
+        {
+          font-size: 1.4rem;
+        }
+      }
+      h2 
+      {
+        font-size: 2.8rem; 
+      }
+
+      li a 
+      {
+        font-size: 20px; 
+      }
+
+      .footerBg,
+      .footerShape 
+      {
+        display: none; 
+      }
+    }
+  }
+}

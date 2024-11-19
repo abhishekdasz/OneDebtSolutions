@@ -165,4 +165,55 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) 
+{
+  // aboutSection for mobile
+  .aboutSection {
+    height: auto;
+    padding: 1rem;
+    .aboutContainer {
+      flex-direction: column;
+      .leftAbout
+      {
+        .floatImg
+        {
+          img 
+          {
+            height: 300px;
+          }
+        }
+        .rotateShape
+        {
+          display: none;
+        }
+      }
+      .blurBg
+      {
+        left: 0;
+        img
+        {
+          height: 300px;
+        }
+      }
+      .leftAbout,
+      .rightAbout 
+      {
+        width: 100%; 
+      }
+
+      .rightAbout 
+      {
+        .aboutContents
+        {
+          h2 
+          {
+            font-size: 2.5rem; 
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
 // about-section ends here
