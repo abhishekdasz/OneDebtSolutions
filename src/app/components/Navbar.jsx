@@ -11,6 +11,7 @@ const NavBar = () => {
     setMenuOpen(!menuOpen);
     console.log(menuOpen);
   };
+  
   return (
     <div className={styles.navbarSection}>
       <div className={styles.navbarContainer}>
