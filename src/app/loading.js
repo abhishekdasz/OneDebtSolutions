@@ -2,8 +2,8 @@ import React from 'react'
 
 const loading = () => {
   return (
-    <div style={{display:'flex', height:'100vh', alignItems:'center', justifyContent:'center', fontSize:'5rem', color:'red'}}>
-      ...loading
+    <div style={{display:'flex', alignItems:'center', justifyContent:'center', height:'100vh'}}>
+        <div className='loader' >  </div>
     </div>
   )
 }
