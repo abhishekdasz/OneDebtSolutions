@@ -21,7 +21,7 @@ const NavBar = () => {
         </div>
 
         <div className={styles.hamburger} onClick={toggleMenu}>
-          { menuOpen ? <MdClose size={28}/> : <MdMenu size={28}/> } 
+          { menuOpen ? <MdClose size={42}/> : <MdMenu size={42}/> } 
         </div>
         
         <div className={`${styles.nav} ${menuOpen ? styles.active : ''}`}>

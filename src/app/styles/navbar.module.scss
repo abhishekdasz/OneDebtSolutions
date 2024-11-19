@@ -1,138 +1,110 @@
-.navbarSection 
-{
+.navbarSection {
   position: sticky;
-  top: 0; /* Ensures the navbar stays at the top */
-  z-index: 1000; /* Ensures it stays on top of other content */
+  top: 0;
+  z-index: 1000;
   font-family: 'Syne', sans-serif;
-  .navbarContainer 
-  {
+
+  .navbarContainer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 100px;
-    position: sticky;
     background-color: #181818;
     width: 100%;
 
-
-    .logo 
-    {
-      img 
-      {
-        height: 62px;
-      }
+    .logo img {
+      height: 62px;
     }
 
-    .hamburger
-    {
+    .hamburger {
       cursor: pointer;
       display: none;
     }
 
-    .nav.active 
-    {
-      position: absolute;
-      top: 6rem;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background: black;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    .nav {
+      display: none; /* Default: Hidden */
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.95);
+      z-index: 1000;
       padding: 20px 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
 
-
-      ul 
-      {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-
-    .nav 
-    {
-      display: flex;
-      align-items: center;
-  
       ul {
         display: flex;
-        gap: 2.6rem;
-  
-        li {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
 
+        li {
           list-style: none;
-          font-size: 22px;
-          cursor: pointer;
-  
+          font-size: 1.8rem;
+
           a {
             text-decoration: none;
             color: #fff;
-          }
-  
-          a:hover {
-            color: #deff10;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: #deff10;
+            }
           }
         }
       }
     }
 
-    .navBtn 
-    {
+    .nav.active {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .navBtn {
       background: #fff;
       display: flex;
       justify-content: center;
-      text-align: center;
       align-items: center;
       border-radius: 6px;
       padding: 1rem 1.2rem;
       height: 3rem;
-      p 
-      {
+
+      p {
         color: black;
         font-weight: 600;
       }
-    }
-    .navBtn:hover
-    {
-      background: #deff10;
-      cursor: pointer;
+
+      &:hover {
+        background: #deff10;
+        cursor: pointer;
+      }
     }
   }
 }
 
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) 
-{
-  .navbarSection 
-  {
-    .navbarContainer 
-    {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbarSection {
+    .navbarContainer {
       padding: 1rem;
     }
-  } 
+  }
 }
-@media screen and (max-width: 768px) 
-{
-  .navbarSection 
-  {
-    .navbarContainer 
-    {
+
+@media screen and (max-width: 768px) {
+  .navbarSection {
+    .navbarContainer {
       padding: 1rem;
-      .hamburger
-      {
+
+      .hamburger {
         display: block;
       }
-      .nav 
-      {
-        display: none;
-      }
-      .nav.active 
-      {
-        display: flex;
-      }
-      .navBtn
-      {
+
+      .navBtn {
         display: none;
       }
     }
