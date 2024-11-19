@@ -29,7 +29,7 @@ const NavBar = () => {
           <ul>
             <li onClick={toggleMenu}><Link href='/'>Home</Link></li>
             <li onClick={toggleMenu}><Link href='/about'>About Us</Link></li>
-            <li onClick={toggleMenu}><Link href='/services'>Services</Link></li>
+            <li onClick={toggleMenu}><Link href='/'>Services</Link></li>
             <li onClick={toggleMenu}><Link href='/career'>Career</Link></li>
             <li onClick={toggleMenu}><Link href='/contact'>Contact Us</Link></li>
           </ul>
