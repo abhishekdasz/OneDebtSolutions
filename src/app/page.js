@@ -107,7 +107,7 @@ const page = () => {
             <h2> We&apos;re Hiring! </h2>
             <h2> Join Our Team Today. </h2>
           </div>
-          <div className={homeStyles.joinBtn}> Join Now </div>
+          <div className={homeStyles.joinBtn}> <Link href='https://forms.gle/VVSfxhmTCpK3JG6e7' target='blank'> Join Now </Link> </div>
 
           <div className={homeStyles.patternLayer}>
             <img src="shape6.png" alt="shape6" />
