@@ -1,11 +1,15 @@
 'use client';
 import React, { useState } from 'react';
 import styles from '@/app/styles/navbar.module.scss';
-import { MdDarkMode } from "react-icons/md";
+import { MdClose, MdDarkMode, MdMenu } from "react-icons/md";
 import { CiLight } from "react-icons/ci";
 import Link from 'next/link';
 
 const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <div className={styles.navbarSection}>
       <div className={styles.navbarContainer}>
@@ -15,8 +19,11 @@ const NavBar = () => {
           <Link href='/'> <img src="logo.png" alt="logo" /> </Link>
         </div>
 
-
-        <div className={styles.nav}>
+        <div className={styles.hamburger}>
+          { menuOpen ? <MdClose size={28}/> : <MdMenu size={28}/> } 
+        </div>
+        
+        <div className={`${styles.nav} ${menuOpen ? styles.active : ''}`}>
           <ul>
             <li><Link href='/'>Home</Link></li>
             <li><Link href='/about'>About Us</Link></li>
