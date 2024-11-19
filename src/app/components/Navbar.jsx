@@ -9,6 +9,7 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    console.log(menuOpen);
   };
   return (
     <div className={styles.navbarSection}>
@@ -25,11 +26,11 @@ const NavBar = () => {
         
         <div className={`${styles.nav} ${menuOpen ? styles.active : ''}`}>
           <ul>
-            <li><Link href='/'>Home</Link></li>
-            <li><Link href='/about'>About Us</Link></li>
-            <li><Link href='/services'>Services</Link></li>
-            <li><Link href='/career'>Career</Link></li>
-            <li><Link href='/contact'>Contact Us</Link></li>
+            <li onClick={toggleMenu}><Link href='/'>Home</Link></li>
+            <li onClick={toggleMenu}><Link href='/about'>About Us</Link></li>
+            <li onClick={toggleMenu}><Link href='/services'>Services</Link></li>
+            <li onClick={toggleMenu}><Link href='/career'>Career</Link></li>
+            <li onClick={toggleMenu}><Link href='/contact'>Contact Us</Link></li>
           </ul>
         </div>
 
